@@ -60,4 +60,9 @@ public class UserController {
     public String welcome(Model model) {
         return "welcome";
     }
+    
+    @RequestMapping(value = "/flight", method = RequestMethod.GET)
+    public String flightPage(Model model) {
+        return "flight";
+    }
 }
